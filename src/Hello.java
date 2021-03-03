@@ -19,6 +19,7 @@ public class Hello {
         if (!alive) {
             System.out.println("sorry you're dead :( ");
         }
+        challenge4();
     }
 
     public static int basic() {
@@ -126,6 +127,22 @@ public class Hello {
             alive = false;
         }
         return alive;
+    }
+
+    public static void challenge4(){
+        double val = 20.00d;
+        double second = 80.00d;
+        double num = 100.00 * (val + second);
+        System.out.println("Number:" + num);
+        double remainder = (num % 40.00d);
+        System.out.println("Remainder:" + remainder);
+        boolean result = (remainder == 0) ? true : false;
+        System.out.println("Result is: " + result );
+        if(!result){
+            System.out.println("Got some remainder");
+        }
+
+
     }
 
 }
