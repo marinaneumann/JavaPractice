@@ -4,22 +4,23 @@ import java.util.*;
 public class Hello {
     public static void main(String[] args) {
         System.out.println("Hello YOU");
-        int num4 = basic();
-        int challengeNum = challenge1(num4);
-        System.out.println(challengeNum);
-        practice1();
-        long res = challenge2();
-        System.out.print("Result of Challenge2: " + res);
-        float it = floatPractice();
-        System.out.println("Float thing: " + it);
-        double thing = challenge3();
-        System.out.println("Result of Challenge3:" + thing);
-        charBoolPractice();
-        boolean alive = conditionalLogicPractice();
-        if (!alive) {
-            System.out.println("sorry you're dead :( ");
-        }
-        challenge4();
+//        int num4 = basic();
+//        int challengeNum = challenge1(num4);
+//        System.out.println(challengeNum);
+//        practice1();
+//        long res = challenge2();
+//        System.out.print("Result of Challenge2: " + res);
+//        float it = floatPractice();
+//        System.out.println("Float thing: " + it);
+//        double thing = challenge3();
+//        System.out.println("Result of Challenge3:" + thing);
+//        charBoolPractice();
+//        boolean alive = conditionalLogicPractice();
+//        if (!alive) {
+//            System.out.println("sorry you're dead :( ");
+//        }
+//        challenge4();
+        challenge5();
     }
 
     public static int basic() {
@@ -144,6 +145,36 @@ public class Hello {
 
 
     }
+
+    public static void challenge5(){
+        String p1 = "Bob Bobbyson";
+        String p2 = "Ralph Randy";
+        String p3 = "Sarah Stoffman";
+        String p4 = "Danny Dodge";
+        int p1Score = calculateHighScorePosition(1500);
+        int p2Score = calculateHighScorePosition(900);
+        int p3Score = calculateHighScorePosition(400);
+        int p4Score = calculateHighScorePosition(50);
+        displayHighScorePosition(p1, p1Score);
+        displayHighScorePosition(p2, p2Score);
+        displayHighScorePosition(p3, p3Score);
+        displayHighScorePosition(p4, p4Score);
+    }
+    public static void displayHighScorePosition(String playerName, int highScorePosition){
+        System.out.println(playerName + " managed to get into position #: " + highScorePosition + " on the high score table");
+    }
+    public static int calculateHighScorePosition(int pScore){
+        if(pScore >1000){
+            return 1;
+        }else if(pScore >500 && pScore <1000){
+            return 2;
+        }else if(pScore >100 && pScore < 500){
+            return 3;
+        }else{
+            return 4;
+        }
+    }
+
 
 }
 
