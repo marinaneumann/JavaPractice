@@ -1,3 +1,3 @@
 Java Practice
 
-Practices with Java Basics, while loosely working through Udemy Java Masterclass course. 
+Practices with Java BASICS, while loosely working through a Udemy Java Masterclass course. 
