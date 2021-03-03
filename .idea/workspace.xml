@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="037b827b-2293-4eec-abfd-9315ec847ee5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaPractice/Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaPractice/Hello.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1614799171002</updated>
-      <workItem from="1614799176351" duration="1748000" />
+      <workItem from="1614799176351" duration="3147000" />
     </task>
     <servers />
   </component>
@@ -84,25 +82,29 @@
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="143" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.827@0.23.1440.827" timestamp="1614799816589" />
-    <state width="601" height="199" key="GridCell.Tab.0.bottom" timestamp="1614801061844">
+    <state width="1202" height="199" key="GridCell.Tab.0.bottom" timestamp="1614802524143">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
-    <state width="601" height="199" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1614801061844" />
-    <state width="601" height="199" key="GridCell.Tab.0.center" timestamp="1614801061843">
+    <state width="1202" height="199" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1614802524143" />
+    <state width="1202" height="199" key="GridCell.Tab.0.center" timestamp="1614802524143">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
-    <state width="601" height="199" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1614801061843" />
-    <state width="601" height="199" key="GridCell.Tab.0.left" timestamp="1614801061843">
+    <state width="1202" height="199" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1614802524143" />
+    <state width="1202" height="199" key="GridCell.Tab.0.left" timestamp="1614802524142">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
-    <state width="601" height="199" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1614801061843" />
-    <state width="601" height="199" key="GridCell.Tab.0.right" timestamp="1614801061843">
+    <state width="1202" height="199" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1614802524142" />
+    <state width="1202" height="199" key="GridCell.Tab.0.right" timestamp="1614802524143">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
-    <state width="601" height="199" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1614801061843" />
+    <state width="1202" height="199" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1614802524143" />
     <state x="344" y="191" key="run.anything.popup" timestamp="1614799801900">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
     <state x="344" y="191" key="run.anything.popup/0.23.1440.827@0.23.1440.827" timestamp="1614799801900" />
+    <state x="344" y="174" width="670" height="676" key="search.everywhere.popup" timestamp="1614801655410">
+      <screen x="0" y="23" width="1440" height="827" />
+    </state>
+    <state x="344" y="174" width="670" height="676" key="search.everywhere.popup/0.23.1440.827@0.23.1440.827" timestamp="1614801655410" />
   </component>
 </project>
