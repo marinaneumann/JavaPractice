@@ -6,6 +6,9 @@ public class Exercise {
 //        exercise2();
 //        exercise3();
 //        exercise4();
+//        exercise5();
+//        exercise6();
+//        exercise7();
 
     }
     public static void exercise1(){
@@ -65,7 +68,6 @@ public class Exercise {
             return false;
         }
     }
-
     public static void alert(boolean res){
         if(res == true){
             System.out.println("YOU NEED TO WAKE UP!!");
@@ -105,5 +107,63 @@ public class Exercise {
         }else{
             System.out.println("not a leap year... whatever??");
         }
+    }
+    public static void exercise5(){
+        Scanner in = new Scanner(System.in);
+        System.out.println("Compare decimals, enter 2 numbers for comparison");
+        double num1 = in.nextDouble();
+        double num2 = in.nextDouble();
+        boolean check = areEqualByThreeDecimalPlaces(num1,num2);
+        if(check == true){
+            System.out.println(num1 + " and " + num2 + " are equal by three decimal places!");
+        }
+    }
+    public static boolean areEqualByThreeDecimalPlaces(double num1, double num2){
+        if((int)(num1 *1000) == (int)(num2*1000)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    public static void exercise6(){
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter 3 numbers to check if sum of first and second number is equal to third:");
+        int num1 = in.nextInt();
+        int num2 = in.nextInt();
+        int num3 = in.nextInt();
+        boolean check = hasEqualSum(num1, num2, num3);
+        if(check == true){
+            System.out.println("Yup");
+        }
+    }
+    public static boolean hasEqualSum(int num1, int num2, int num3){
+        return ((num1+num2) == num3);
+//        if((num1 + num2) == num3){
+//            return true;
+//        }else{
+//           return false;
+//        }
+    }
+    public static void exercise7(){
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter 3 numbers to check if a 'teen' number (between 13-19) :");
+        int num1 = in.nextInt();
+        int num2 = in.nextInt();
+        int num3 = in.nextInt();
+        boolean check = hasTeen(num1,num2, num3);
+        if(check == false){
+            System.out.println("NONE of those ages were a 'teen' year...");
+        }
+    }
+    public static boolean hasTeen(int num1, int num2,int num3){
+        return isTeen(num1) || isTeen(num2) || isTeen(num3);
+    }
+    public static boolean isTeen(int num){
+//        if(num <=19 && num >=13){
+//            return true;
+//        }else{
+//            return false;
+//        }
+        return(num <=19 && num >=13)? true: false ;
     }
 }
