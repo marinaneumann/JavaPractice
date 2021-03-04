@@ -9,6 +9,8 @@ public class Exercise {
 //        exercise5();
 //        exercise6();
 //        exercise7();
+//        exercise8();
+        exercise9();
 
     }
     public static void exercise1(){
@@ -165,5 +167,64 @@ public class Exercise {
 //            return false;
 //        }
         return(num <=19 && num >=13)? true: false ;
+    }
+    public static void exercise8(){
+        // Method to calculate Feet and inchines to centimeters but with different parameters
+        double result = calcFeetAndInchesToCentimeters(23.43);
+        System.out.println("Centimeter conversion is: " + result);
+    }
+    public static double calcFeetAndInchesToCentimeters(double feet, double inches){
+        if(feet <0 || (inches <0 && inches >12)){
+            return -1;
+        }else{
+            //1 inch =  2.54 cm and 1ft = 12in
+            double feetToInch = feet * 12;
+            System.out.println("Feet =" + feetToInch);
+            System.out.println("Inches =" + inches);
+            double cm2 = (feetToInch + inches) *2.54;
+            System.out.println("Inches to Centimeters Total : " + cm2);
+            return cm2;
+            //double cent = feet * 12;
+            //cent += inches *2.54;
+
+        }
+    }
+    public static double calcFeetAndInchesToCentimeters(double inches){
+        if(inches <0){
+            return -1;
+        }else{
+            double feet = (int)inches / 12;
+            double rem = (int) inches %12;
+            System.out.println(inches + "inches is equal to" + feet + "ft and "+ rem);
+            return calcFeetAndInchesToCentimeters(feet, inches);
+        }
+    }
+    public static void exercise9(){
+        Scanner in = new Scanner(System.in);
+        //System.out.println("Enter time for conversion, first minutes, then seconds");
+        System.out.println("Enter time for conversion of  seconds");
+        //int min = in.nextInt();
+        int sec = in.nextInt();
+        String result = getDurationString(sec);
+        //String result = getDurationString(min, sec);
+        System.out.println(result);
+    }
+    private static String getDurationString(long minutes,long seconds){
+        if(minutes <0 || seconds <0 && seconds >59 ){
+            return "Invalid Value";
+        }else{
+            long hours = minutes / 60;
+            minutes = minutes %60;
+            seconds = minutes *60;
+            return(hours + "h " + minutes + "m " + seconds +"s ");
+        }
+    }
+    private static String getDurationString(long seconds){
+        if(seconds <0){
+            return "Invalid value";
+        }else{
+            long min = seconds /60;
+            return getDurationString(min, seconds);
+        }
     }
 }
