@@ -14,7 +14,9 @@ public class Exercise {
 //        exercise10();
 //        exercise11();
 //        exercise12();
-        exercise13();
+//        exercise13();
+//        exercise14();
+        exercise15();
 
     }
     public static void exercise1(){
@@ -310,6 +312,66 @@ public class Exercise {
             System.out.println("Cat is playing!");
         }else{
             System.out.println("Cat too hot and is asleep in the shade");
+        }
+    }
+    public static void exercise14(){
+        printDayOfTheWeek(3);
+        printDayOfTheWeek(6);
+        printDayOfTheWeek(9);
+        printDayOfTheWeek(2);
+    }
+    public static void printDayOfTheWeek(int day){
+        switch(day){
+            case 0:
+                System.out.println("Sunday");
+                break;
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            default:
+                System.out.println("Invalid day");
+                break;
+        }
+    }
+    public static void exercise15(){
+       int  daysofMonth = getDaysInMonth(12, 2009);
+       System.out.println("Month 12 of year 2009 has these many days:" +daysofMonth);
+        daysofMonth = getDaysInMonth(9, 1983);
+        System.out.println("Month 9 of year 1983 has these many days:" +daysofMonth);
+        daysofMonth = getDaysInMonth(2, 2020);
+        System.out.println("Month 2 of year 2020 has these many days:" +daysofMonth);
+    }
+    public static int getDaysInMonth(int month, int year){
+        if(month <1 || month >12){
+            return -1;
+        }else if (year <1 || year >9999){
+            return -1;
+        }else if(isLeapYear(year) && month ==2){
+            return 29;
+        }
+
+        switch(month){
+            case 11: case 4: case 6: case9:
+                return 30;
+            case 2:
+                return 28;
+            default:
+                return 31;
         }
     }
 }
