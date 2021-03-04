@@ -13,7 +13,8 @@ public class Exercise {
 //        exercise9();
 //        exercise10();
 //        exercise11();
-        exercise12();
+//        exercise12();
+        exercise13();
 
     }
     public static void exercise1(){
@@ -285,5 +286,30 @@ public class Exercise {
             System.out.println("Neither are all equal or different");
         }
     }
-
+    public static void exercise13(){
+        boolean res = isCatPlaying(false, 95);
+        checkCat(res);
+        res = isCatPlaying(true, 38);
+        checkCat(res);
+        res = isCatPlaying(false,31);
+        checkCat(res);
+    }
+    public static boolean isCatPlaying(boolean summer, int temperature){
+        if(temperature <25 && temperature >35){
+            return false;
+        }else if(summer == true && temperature >=25 && temperature <=45){
+            return true;
+        }else if(temperature >=25 && temperature <=35){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    public static void checkCat(boolean result){
+        if(result == true){
+            System.out.println("Cat is playing!");
+        }else{
+            System.out.println("Cat too hot and is asleep in the shade");
+        }
+    }
 }
