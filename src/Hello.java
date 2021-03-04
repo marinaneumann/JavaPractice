@@ -22,7 +22,6 @@ public class Hello {
 //        challenge4();
         challenge5();
     }
-
     public static int basic() {
         int num1 = 10;
         int num2 = (num1 + 5) * 20;
@@ -31,12 +30,10 @@ public class Hello {
         System.out.println(num4);
         return num4;
     }
-
     public static int challenge1(int number) {
         int myLastOne = number - 1000;
         return myLastOne;
     }
-
     public static void practice1() {
         int value1 = 10000;
         int value2 = 50000;
@@ -54,7 +51,6 @@ public class Hello {
         byte num2 = (byte) (num / 2);
         System.out.println(num2);
     }
-
     public static long challenge2() {
         byte num1 = (byte) 10;
         short num2 = (short) 20;
@@ -63,7 +59,6 @@ public class Hello {
         long result = 50000L + 10L * (num1 + num2 + num3);
         return result;
     }
-
     public static float floatPractice() {
         float a = 4 / 3;
         float b = 9.7f;
@@ -79,14 +74,12 @@ public class Hello {
         return thing;
 
     }
-
     public static double challenge3() {
         int pounds = 300;
         double kilo = 0.45359237;
         double kiloConvert = (double) (pounds * kilo);
         return kiloConvert;
     }
-
     public static void charBoolPractice() {
         char m = 'm';
         char unicodeCharM = '\u006d';
@@ -102,7 +95,6 @@ public class Hello {
         System.out.println("Hello, " + name);
 
     }
-
     public static boolean conditionalLogicPractice() {
         Scanner in = new Scanner(System.in);
         System.out.println("Are you alive?");
@@ -129,7 +121,6 @@ public class Hello {
         }
         return alive;
     }
-
     public static void challenge4(){
         double val = 20.00d;
         double second = 80.00d;
@@ -145,7 +136,6 @@ public class Hello {
 
 
     }
-
     public static void challenge5(){
         String p1 = "Bob Bobbyson";
         String p2 = "Ralph Randy";
@@ -164,17 +154,17 @@ public class Hello {
         System.out.println(playerName + " managed to get into position #: " + highScorePosition + " on the high score table");
     }
     public static int calculateHighScorePosition(int pScore){
+        int pos = 4;
         if(pScore >1000){
-            return 1;
-        }else if(pScore >500 && pScore <1000){
-            return 2;
-        }else if(pScore >100 && pScore < 500){
-            return 3;
+            pos = 1;
+        }else if(pScore >=500){
+            pos =  2;
+        }else if(pScore >=100 ){
+            pos =  3;
         }else{
-            return 4;
+            pos =  4;
         }
+        return pos;
     }
-
-
 }
 
