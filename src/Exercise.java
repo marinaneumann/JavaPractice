@@ -17,7 +17,9 @@ public class Exercise {
 //        exercise13();
 //        exercise14();
 //        exercise15();
-        extraRandomPractice();
+//        extraRandomPractice();
+//        exercise16();
+        exercise17();
 
     }
     public static void exercise1(){
@@ -375,10 +377,83 @@ public class Exercise {
                 return 31;
         }
     }
-    public static void extraRandomPractice(){
+    public static void extraRandomPractice() {
         //interestForPractice();
-        primeNumberPractice();
+        // primeNumberPractice();
+        //sum3And5();
+        //evenChecking();
+//        System.out.println("Sum of digits in number 125 is:" + sumDigits(125));
+//        System.out.println("Sum of digits in number -125 is:" + sumDigits(-125));
+//        System.out.println("Sum of digits in number 4 is:" + sumDigits(4));
+//        System.out.println("Sum of digits in number 32123 is:" + sumDigits(32123));
+        System.out.println(isPalidrome(11));
+        System.out.println(isPalidrome(23));
+        System.out.println(isPalidrome(-31));
+        System.out.println(isPalidrome(10001));
 
+    }
+    public static boolean isPalidrome(int number){
+        if(number <0){
+            number *=1;
+        }
+        int num = number;
+        int reverse = 0;
+        while(num >0){
+            int lastDigit = num %10;
+            reverse = reverse*10 + lastDigit;
+            num /=10;
+        }
+        if(reverse == number){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    public static int sumDigits(int number){
+        if(number <10){
+            return -1;
+        }
+        int sum = 0;
+        while(number >0){
+           int digit = number %10;
+           sum +=digit;
+           number /=10;
+        }
+        return sum;
+    }
+    public static void evenChecking(){
+        int start = 2;
+        int end = 50;
+        while (start <= end) {
+            boolean result = isEvenNumber(start);
+            if (result == true) {
+                System.out.println(start + " is an even number");
+            }
+            start++;
+        }
+
+    }
+    public static boolean isEvenNumber(int num){
+        if(num%2 == 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    public static void sum3And5(){
+        int sum = 0;
+        int count = 0;
+        for(int i = 1; i <= 1000; i++){
+            if((i%3 == 0) && (i% 5==0)){
+                System.out.println(i);
+                sum +=i;
+                count++;
+                if(count ==5){
+                    break;
+                }
+            }
+        }
+        System.out.println("Sum of numbers divisible by 3 and 5 are:" + sum);
     }
     public static void primeNumberPractice(){
         //For a range of numbers, determine if the number is a prime number using the isPrime method.
@@ -419,5 +494,65 @@ public class Exercise {
     }
     public static double calculateInterest(double amount, double interestRate){
         return(amount* (interestRate * 100));
+    }
+    public static void exercise16(){
+        System.out.println(hasSharedDigit(19, 13));
+        System.out.println(hasSharedDigit(124, 268));
+        System.out.println(hasSharedDigit(1, 19));
+        System.out.println(hasSharedDigit(87, 28));
+        System.out.println(hasSameLastDigit(41,22,71));
+        System.out.println(hasSameLastDigit(2,22,71));
+        System.out.println(hasSameLastDigit(23,32,42));
+
+    }
+    public static boolean hasSameLastDigit(int n1, int n2, int n3){
+        if(isValid(n1) && isValid(n2) && isValid(n3)){
+            n1%=10;
+            n2%=10;
+            n3%=10;
+            return(n1==n2) || (n1==n3) ||(n2 ==n3);
+        }
+        return false;
+    }
+    public static boolean isValid(int n){
+        if(n >1000 || n < 10){
+            return false;
+        }
+        return true;
+    }
+    public static boolean hasSharedDigit(int num1, int num2){
+        if((num1 > 99 || num1 <10) || (num2>99 || num2 <10)){
+            return false;
+        }
+        int n1 = num1;
+        while(n1>0){
+            int n2 = num2;
+            while(n2 >0){
+                if(n1 %10 == n2%10){
+                    return true;
+                }
+                n2 /=10;
+            }
+            n1/=10;
+        }
+        return false;
+    }
+    public static void exercise17(){
+        System.out.println(greatestCommonDivisor(45,15));
+        System.out.println(greatestCommonDivisor(16,40));
+        System.out.println(greatestCommonDivisor(100,65));
+
+    }
+    public static int greatestCommonDivisor(int n1, int n2){
+        if(n1 <10 || n2 <10){
+            return -1;
+        }
+        int min = n1 < n2? n1: n2;
+        for(int i = min; i >1; i--){
+            if(n1%i == 0 && n2%i==0){
+                return i;
+            }
+        }
+        return 1;
     }
 }
