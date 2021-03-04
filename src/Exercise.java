@@ -10,7 +10,10 @@ public class Exercise {
 //        exercise6();
 //        exercise7();
 //        exercise8();
-        exercise9();
+//        exercise9();
+//        exercise10();
+//        exercise11();
+        exercise12();
 
     }
     public static void exercise1(){
@@ -227,4 +230,60 @@ public class Exercise {
             return getDurationString(min, seconds);
         }
     }
+    public static void exercise10(){
+        double res = area(9.4);
+        System.out.println("Area of a circle with radius 9.4 is: " + res);
+        res = area(12, 6);
+        System.out.println("Area of a rectangle  with x of 12 and y of 6 is: " + res);
+        res = area(-1, 9);
+        System.out.println("Area of a circle with x = -1 and y of 9 is: " + res);
+    }
+    public static double area(double radius){
+        if(radius <0){
+            return -1;
+        }else{
+            return radius * radius * Math.PI;
+        }
+    }
+    public static double area(double x, double y ){
+        if(x <0 || y <0){
+            return -1;
+        }else{
+            return x* y;
+        }
+    }
+    public static void exercise11(){
+        printYearsAndDays(48000);
+        printYearsAndDays(900);
+        printYearsAndDays(40);
+    }
+    public static void printYearsAndDays(long minutes){
+        if(minutes < 0){
+            System.out.println("Invalid value");
+        }else{
+            long aYear = 60*24 * 365;
+            long aDay = 60*24;
+            long years = minutes /aYear;
+            long days = (minutes %aYear) / aDay;
+            System.out.println(minutes + "m = " + years + "y and "+ days + "d");
+        }
+    }
+    public static void exercise12(){
+        printEqual(10, 10, 10);
+        printEqual(9,-3, 2);
+        printEqual(12,9, 4);
+        printEqual(4, 4, 12);
+    }
+    public static void printEqual(int num1, int num2, int num3){
+        if(num1 <0 || num2 < 0 || num3 < 0){
+            System.out.println("Invalid value");
+        }else if (num1 == num2 && num2 == num3){
+            System.out.println("All numbers are equal");
+        }else if (num1 != num2 && num2 != num3 && num3 != num1){
+            System.out.println("All numbers are different");
+        }else{
+            System.out.println("Neither are all equal or different");
+        }
+    }
+
 }
