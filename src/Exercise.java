@@ -19,7 +19,7 @@ public class Exercise {
 //        exercise15();
 //        extraRandomPractice();
 //        exercise16();
-        exercise17();
+//        exercise17();
 
     }
     public static void exercise1(){
