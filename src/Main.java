@@ -3,6 +3,7 @@ public class Main {
 //        carClassPractice();
 //        personClassPractice();
 //        bankClassPractice();
+        vipClassPractice();
     }
     public static void carClassPractice(){
         Car porsche = new Car();
@@ -31,5 +32,15 @@ public class Main {
 
         BankAccount lilyAccount = new BankAccount("91111", 0.00, "Lily Lorana Lugerdson", "lilyemail.com", "918-383-9311");
         System.out.println(lilyAccount.getCustomerName());
+    }
+    public static void vipClassPractice(){
+        VipCustomer vip = new VipCustomer();
+        System.out.println(vip.getName());
+
+        VipCustomer vip2 = new VipCustomer("Bob", 250000.00);
+        System.out.println(vip2.getName());
+
+        VipCustomer vip3 = new VipCustomer("Kyle", 500.00, "kyle@email.com");
+        System.out.println(vip3.getName());
     }
 }
