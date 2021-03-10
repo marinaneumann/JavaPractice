@@ -5,7 +5,8 @@ public class Main {
 //        bankClassPractice();
 //        vipClassPractice();
 //        wallClassPracitce();
-        pointClassPractice();
+//        pointClassPractice();
+//        complexNumPractice();
     }
     public static void carClassPractice(){
         Car porsche = new Car();
@@ -60,5 +61,14 @@ public class Main {
             it.setX(6);
             it.setY(3);
             System.out.println("Distance from " + it.getX() + ", " + it.getY() + "to the points " + test.getX() + ", " + test.getY() + " is " + it.distance(test));
+    }
+    public static void complexNumPractice(){
+        ComplexNumber a = new ComplexNumber(3,5);
+        ComplexNumber b = new ComplexNumber(2,9);
+        a.add(9, 2);
+        a.subtract(b);.
+        a.subtract(2, 4);
+        a.add(b);
+
     }
 }
