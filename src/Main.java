@@ -3,7 +3,8 @@ public class Main {
 //        carClassPractice();
 //        personClassPractice();
 //        bankClassPractice();
-        vipClassPractice();
+//        vipClassPractice();
+        wallClassPracitce();
     }
     public static void carClassPractice(){
         Car porsche = new Car();
@@ -42,5 +43,14 @@ public class Main {
 
         VipCustomer vip3 = new VipCustomer("Kyle", 500.00, "kyle@email.com");
         System.out.println(vip3.getName());
+    }
+    public static void wallClassPracitce(){
+        Wall w = new Wall();
+        w.setHeight(50);
+        w.setWidth(92);
+        System.out.println("Area of " + w.getWidth() + " and " + w.getHeight() +" is " + w.getArea());
+
+        Wall d = new Wall(45, 29);
+        System.out.println("Area of this is " + d.getArea());
     }
 }
