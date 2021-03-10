@@ -4,7 +4,8 @@ public class Main {
 //        personClassPractice();
 //        bankClassPractice();
 //        vipClassPractice();
-        wallClassPracitce();
+//        wallClassPracitce();
+        pointClassPractice();
     }
     public static void carClassPractice(){
         Car porsche = new Car();
@@ -52,5 +53,12 @@ public class Main {
 
         Wall d = new Wall(45, 29);
         System.out.println("Area of this is " + d.getArea());
+    }
+    public static void pointClassPractice(){
+            Point test = new Point(3,5);
+            Point it = new Point();
+            it.setX(6);
+            it.setY(3);
+            System.out.println("Distance from " + it.getX() + ", " + it.getY() + "to the points " + test.getX() + ", " + test.getY() + " is " + it.distance(test));
     }
 }
