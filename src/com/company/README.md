@@ -7,4 +7,7 @@ Several classes used to house exercises and random practice.
 Concepts Practiced: 
 -Expressions, Statements, Methods, etc. 
 -Control Flow Statements
--OOP Practice-classes, constructors and inheritance.
+-OOP Practice:
+    -classes, constructors and inheritance.
+    -composition, encapsulation, and polymorphism
+- 

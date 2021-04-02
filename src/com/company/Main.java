@@ -1,9 +1,22 @@
 package com.company;
 
+import java.awt.*;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+//	    javapractice1_6();
+        Dimensions dim = new Dimensions(20, 20,5);
+        Case theCase = new Case("220B", "Dell", "240" ,dim);
+        Monitor theMonitor = new Monitor("27inch beast", "Acer", 27, new Resolution(2540, 1440));
+        Motherboard theMotherboard = new Motherboard("BJ-200", "Asus", 4,6,"v2.44");
+        PC thePC = new PC(theCase,theMonitor, theMotherboard);
+        thePC.getMonitor().drawPixelAt(1500,1200,"red");
+        thePC.getMotherboard().loadProgram("Windows 1.0");
+        thePC.getTheCase().pressPowerButton();
+    }
+    public static void javapractice1_6(){
+        // write your code here
 //        carClassPractice();
 //        personClassPractice();
 //        bankClassPractice();
@@ -11,15 +24,21 @@ public class Main {
 //        wallClassPracitce();
 //        pointClassPractice();
 //        complexNumPractice();
-        System.out.println("Hmm");
-        Animal animal = new Animal("Animal", 1,1,5,5);
-        Dog dog = new Dog("Bernese Mountain Dog", 8, 20, 2,4,1, 20, 4, 5, "long");
+//        System.out.println("Hmm");
+//        Animal animal = new Animal("Animal", 1,1,5,5);
+//        Dog dog = new Dog("Bernese Mountain Dog", 8, 20, 2,4,1, 20, 4, 5, "long");
 //        dog.eat();
 //        dog.walk();
 //        System.out.println("Hmm");
 //        dog.run();
-        Fish nemo = new Fish("marlin",4,3,10,2,3);
-        nemo.move(5);
+//        Fish nemo = new Fish("marlin",4,3,10,2,3);
+//        nemo.move(5);
+
+        Mercedes merz = new Mercedes(40);
+        merz.steer(45);
+        merz.accelerate(30);
+        merz.accelerate(20);
+        merz.accelerate(-42);
     }
     public static void carClassPractice(){
         Car porsche = new Car();
