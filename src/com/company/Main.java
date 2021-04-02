@@ -14,7 +14,10 @@ public class Main {
         System.out.println("Hmm");
         Animal animal = new Animal("Animal", 1,1,5,5);
         Dog dog = new Dog("Bernese Mountain Dog", 8, 20, 2,4,1, 20, 4, 5, "long");
-        dog.eat();
+//        dog.eat();
+        dog.walk();
+        System.out.println("Hmm");
+        dog.run();
     }
     public static void carClassPractice(){
         Car porsche = new Car();

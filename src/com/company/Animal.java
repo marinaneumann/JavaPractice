@@ -17,8 +17,8 @@ public class Animal {
     public void eat(){
         System.out.println("Animal.eat() is called.");
     }
-    public void move(){
-
+    public void move(int speed){
+        System.out.println("Animal.move() is called and  moving at " + speed);
     }
     public void setName(String name) {
         this.name = name;
