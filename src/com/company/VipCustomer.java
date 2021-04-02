@@ -1,3 +1,5 @@
+package com.company;
+
 public class VipCustomer {
     private String name;
     private double creditLimit;

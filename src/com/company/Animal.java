@@ -15,7 +15,7 @@ public class Animal {
         this.weight = weight;
     }
     public void eat(){
-
+        System.out.println("Animal.eat() is called.");
     }
     public void move(){
 
