@@ -15,14 +15,20 @@ public class Fish extends Animal {
 
     }
     private void moveMusceles(){
-
+        System.out.println("Fish moved musceles");
     }
     private void moveBackFin(){
-
+        System.out.println("Fish moved back fin");
     }
+
+    @Override
+    public void move(int speed) {
+        swim(speed);
+        super.move(speed);
+    }
+
     private void swim(int speed){
         moveMusceles();
         moveBackFin();
-        super.move(speed);
     }
 }
