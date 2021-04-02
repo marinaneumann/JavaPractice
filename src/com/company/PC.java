@@ -10,7 +10,14 @@ public class PC {
         this.monitor = monitor;
         this.motherboard = motherboard;
     }
-
+    public void powerUp(){
+        theCase.pressPowerButton();
+        drawLogo();
+    }
+    private void drawLogo(){
+        System.out.println("Fancy graphics...blah blah");
+        monitor.drawPixelAt(1200, 50, "yellow");
+    }
     public Case getTheCase() {
         return theCase;
     }
