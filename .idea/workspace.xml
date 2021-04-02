@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="037b827b-2293-4eec-abfd-9315ec847ee5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/CarCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +49,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -99,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614799171002</updated>
       <workItem from="1614799176351" duration="31241000" />
-      <workItem from="1617314863384" duration="2929000" />
+      <workItem from="1617314863384" duration="4073000" />
     </task>
     <servers />
   </component>
@@ -113,10 +115,10 @@
     <state x="143" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.823@0.23.1440.823" timestamp="1617331822195" />
     <state x="143" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.824@0.23.1440.824" timestamp="1614832018140" />
     <state x="143" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.827@0.23.1440.827" timestamp="1614799816589" />
-    <state x="499" y="104" key="#com.intellij.ide.util.MemberChooser" timestamp="1617333038809">
+    <state x="499" y="104" key="#com.intellij.ide.util.MemberChooser" timestamp="1617334856766">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state x="499" y="104" key="#com.intellij.ide.util.MemberChooser/0.23.1440.823@0.23.1440.823" timestamp="1617333038809" />
+    <state x="499" y="104" key="#com.intellij.ide.util.MemberChooser/0.23.1440.823@0.23.1440.823" timestamp="1617334856766" />
     <state x="499" y="104" key="#com.intellij.ide.util.MemberChooser/0.23.1440.825@0.23.1440.825" timestamp="1615359630227" />
     <state x="416" y="212" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1617331820562">
       <screen x="0" y="23" width="1440" height="823" />
@@ -126,6 +128,10 @@
       <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state x="449" y="124" key="#xdebugger.evaluate/0.23.1440.823@0.23.1440.823" timestamp="1614886526579" />
+    <state x="0" y="23" width="1440" height="823" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1617334618478">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="0" y="23" width="1440" height="823" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1440.823@0.23.1440.823" timestamp="1617334618478" />
     <state width="1204" height="199" key="GridCell.Tab.0.bottom" timestamp="1617333073372">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
