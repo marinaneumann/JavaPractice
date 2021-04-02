@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="037b827b-2293-4eec-abfd-9315ec847ee5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614799171002</updated>
       <workItem from="1614799176351" duration="31241000" />
-      <workItem from="1617314863384" duration="475000" />
+      <workItem from="1617314863384" duration="1020000" />
     </task>
     <servers />
   </component>
@@ -101,9 +103,10 @@
     </state>
     <state x="143" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.824@0.23.1440.824" timestamp="1614832018140" />
     <state x="143" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.827@0.23.1440.827" timestamp="1614799816589" />
-    <state x="499" y="104" key="#com.intellij.ide.util.MemberChooser" timestamp="1615359630227">
-      <screen x="0" y="23" width="1440" height="825" />
+    <state x="499" y="104" key="#com.intellij.ide.util.MemberChooser" timestamp="1617331250439">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
+    <state x="499" y="104" key="#com.intellij.ide.util.MemberChooser/0.23.1440.823@0.23.1440.823" timestamp="1617331250439" />
     <state x="499" y="104" key="#com.intellij.ide.util.MemberChooser/0.23.1440.825@0.23.1440.825" timestamp="1615359630227" />
     <state x="449" y="124" key="#xdebugger.evaluate" timestamp="1614886526579">
       <screen x="0" y="23" width="1440" height="823" />
