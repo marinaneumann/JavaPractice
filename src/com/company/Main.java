@@ -17,6 +17,15 @@ public class Main {
         food.addHamburgerAddition1("Lettuce", 1.50);
         food.addHamburgerAddition1("Cheese", 2.50);
         System.out.println("Total burger price is " + food.itemizeBurger());
+
+        HealthyBurger hBurger = new HealthyBurger("chicken", 15.39);
+        hBurger.addHealthExtra1("Kale", 2.50);
+        hBurger.addHealthExtra2("Avocado", 3.50);
+        System.out.println(" Total healthy burger price is " + hBurger.itemizeBurger());
+
+        DeluxeBurger db = new DeluxeBurger();
+        db.addHamburgerAddition1("Popcorn", 1000.00);
+        System.out.println(" Deluxe burger total price is " + db.itemizeBurger());
     }
     public static void polymorphismPractice(){
         Computer comp = new Computer("Dell", 800, 500,2001);

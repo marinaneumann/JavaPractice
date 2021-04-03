@@ -19,4 +19,18 @@ public class HealthyBurger extends Hamburger {
         this.healthyExtra2 = name;
         this.healthyExtra2Price = price;
     }
+
+    @Override
+    public double itemizeBurger() {
+        double burgerPrice =  super.itemizeBurger();
+        if(this.healthyExtra1 != null){
+            burgerPrice += this.healthyExtra1Price;
+            System.out.println(" Added " + this.healthyExtra1 + " which costs" + this.healthyExtra1Price);
+        }
+        if(this.healthyExtra2 != null){
+            burgerPrice += this.healthyExtra2Price;
+            System.out.println(" Added " + this.healthyExtra2 + " which costs" + this.healthyExtra2Price);
+        }
+        return burgerPrice;
+    }
 }
