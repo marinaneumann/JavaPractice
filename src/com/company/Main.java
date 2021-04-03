@@ -7,7 +7,16 @@ public class Main {
     public static void main(String[] args) {
 //	    javapractice1_6Ch();
 //        compositionPractice();
-        polymorphismPractice();
+//        polymorphismPractice();
+        OOPChallenge();
+    }
+    public static void OOPChallenge(){
+        Hamburger food = new Hamburger("Basic", "sausage", 3.56, "white");
+        double price = food.itemizeBurger();
+        food.addHamburgerAddition1("Tomato", 0.50);
+        food.addHamburgerAddition1("Lettuce", 1.50);
+        food.addHamburgerAddition1("Cheese", 2.50);
+        System.out.println("Total burger price is " + food.itemizeBurger());
     }
     public static void polymorphismPractice(){
         Computer comp = new Computer("Dell", 800, 500,2001);
