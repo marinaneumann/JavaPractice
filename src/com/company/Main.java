@@ -7,6 +7,24 @@ public class Main {
     public static void main(String[] args) {
 //	    javapractice1_6Ch();
 //        compositionPractice();
+        polymorphismPractice();
+    }
+    public static void polymorphismPractice(){
+        Computer comp = new Computer("Dell", 800, 500,2001);
+        System.out.println(comp.startComputer());
+        comp.finderSearch("Penguin Taco Unicorns");
+        System.out.println();
+
+        Apple ap = new Apple("Macbook Pro", 2400, 850,2020, "10.15.03", "Pro", 4, "Blah");
+        System.out.println(ap.startComputer());
+        ap.finderSearch("Penguin Taco Unicorns");
+        System.out.println();
+
+        Microsoft micro = new Microsoft("Macbook Pro", 2400, 850,2020, "10.15.03", "Pro", 4, "Blah");
+        System.out.println(micro.startComputer());
+        micro.finderSearch("Penguin Taco Unicorns");
+
+
     }
     public static void compositionPractice(){
         Dimensions dim = new Dimensions(20, 20,5);
